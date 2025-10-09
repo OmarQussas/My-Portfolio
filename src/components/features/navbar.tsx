@@ -8,8 +8,8 @@ import {
   NavigationMenu,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { NavLinks } from "./nav-links";
-import { LanguageSwitcher } from "./language-switcher";
+import { NavLinks } from "../nav-links";
+import { LanguageSwitcher } from "../language-switcher";
 import { Link } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -58,24 +58,21 @@ export function Navbar() {
 
           {/* Dark mode toggler */}
           <Button
-            variant="default"
-            size="icon"
+            variant="ghost"
+            size="sm"
             onClick={toggleDarkMode}
-            className="ml-2 bg-primary-light dark:bg-primary"
+            className="flex items-center gap-2 rounded-xl bg-primary-light  border-secondary text-white hover:bg-primary-light/80 dark:bg-primary dark:hover:bg-primary/80  "
           >
-            {isDark ? (
-              <Sun className="w-5 h-5" />
-            ) : (
-              <Moon className="w-5 h-5" />
-            )}
+            {isDark ? <Sun className="" /> : <Moon className="" />}
           </Button>
         </nav>
 
         {/* Mobile Menu */}
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
+            {/* menu button */}
             <Button variant="ghost" size="icon" className="lg:hidden">
-              <Menu className="h-6 w-6 text-primary-light dark:text-primary" />
+              <Menu className="h-5 w-5 text-primary-light dark:text-primary" />
             </Button>
           </SheetTrigger>
           <SheetContent
@@ -85,13 +82,11 @@ export function Navbar() {
             <nav className="flex flex-col space-y-6 mt-10">
               <NavLinks mobile onClick={() => setOpen(false)} />
               <div className="pt-4 flex justify-between items-center">
+                {/* language button */}
                 <LanguageSwitcher />
+                {/* darkmode button */}
                 <Button variant="ghost" size="icon" onClick={toggleDarkMode}>
-                  {isDark ? (
-                    <Sun className="w-5 h-5" />
-                  ) : (
-                    <Moon className="w-5 h-5" />
-                  )}
+                  {isDark ? <Sun className="" /> : <Moon className="" />}
                 </Button>
               </div>
             </nav>

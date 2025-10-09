@@ -34,9 +34,9 @@ export function LanguageSwitcher() {
         <Button
           variant="outline"
           size="sm"
-          className="flex items-center gap-2 rounded-xl bg-primary-light  border-secondary text-secondary-light hover:bg-primary-light/80 dark:bg-primary dark:hover:bg-primary/80  focus:outline-none focus:ring-0 focus:ring-offset-0 active:outline-none"
+          className="flex items-center gap-2 rounded-xl bg-primary-light     text-secondary-light hover:bg-primary-light/80 dark:bg-primary dark:hover:bg-primary/80  "
         >
-          <Globe className="h-4 w-4 text-secondary " />
+          <Globe className=" text-secondary " />
           <span className="hidden sm:inline font-medium text-secondary">
             {currentLanguage?.name}
           </span>

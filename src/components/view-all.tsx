@@ -22,13 +22,13 @@ export default function ViewAllLink({ href, label }: ViewAllLinkProps) {
     <div className="text-center mt-12">
       <a
         href={href}
-        className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
+        className="inline-flex items-center gap-2 text-primary-light dark:text-primary font-medium group no-underline"
       >
         {label}
         {isRtl ? (
-          <ArrowLeft className="w-5 h-5" />
+          <ArrowLeft className="w-5 h-5 transition-transform duration-300 ease-in-out group-hover:-translate-x-1" />
         ) : (
-          <ArrowRight className="w-5 h-5" />
+          <ArrowRight className="w-5 h-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
         )}
       </a>
     </div>

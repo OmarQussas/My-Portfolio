@@ -3,7 +3,8 @@
     "title": "Data Scientist & AI Specialist",
     "description": "I'm Omar, a passionate data scientist with over 5 years of experience in AI and machine learning  transforming data into actionable insights through predictive modeling and big data analytics.",
     "download": "Download Resume",
-    "contact": "Contact Me"
+    "contact": "Contact Me",
+    "typedStrings": ["Omar Alzahdy", "Data Nerd", "AI Enthusiast"]
   },
   "language": {
     "en": "English",
@@ -24,9 +25,9 @@
   },
   "about": {
     "title": "About Me",
-    "intro": "I'm {name}, a passionate {role} with a deep curiosity for turning raw data into meaningful insights. With over five years of experience in {ai} and {ml}, I specialize in building predictive models and scalable analytics solutions that drive data-informed decisions.",
-    "experience": "I've worked on diverse projects across {visualization}, {analytics}, and {modeling}, collaborating closely with engineers and business teams to translate complex data into actionable strategies. My approach blends analytical precision with creative problem-solving — ensuring every model tells a story and every insight drives impact.",
-    "goal": "My goal is to continue advancing in the fields of {research} and {innovation}, contributing to products and systems that help people make smarter, faster, and more ethical decisions through data.",
+    "intro": "I'm <name>OmarAlzahdy</name>, a passionate <role> Data Scientist</role> with a deep curiosity for turning raw data into meaningful insights. With over five years of experience in <ai> AI</ai> and <ml> Machine Learning</ml> , I specialize in building predictive models and scalable analytics solutions that drive data-informed decisions.",
+    "experience": "I've worked on diverse projects across <visualization>Data Visualization</visualization>, <analytics> big data analytics</analytics>, and <modeling>statistical Modeling</modeling>, collaborating closely with engineers and business teams to translate complex data into actionable strategies. My approach blends analytical precision with creative problem-solving — ensuring every model tells a story and every insight drives impact.",
+    "goal": "My goal is to continue advancing in the fields of <research>AI research</research> and <innovation>data-driven innovations</innovation>, contributing to products and systems that help people make smarter, faster, and more ethical decisions through data.",
     "name": "Omar AlZahdy",
     "role": "Data Scientist",
     "ai": "AI",
