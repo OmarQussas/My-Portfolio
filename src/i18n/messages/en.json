@@ -1,0 +1,139 @@
+{
+  "home": {
+    "title": "Data Scientist & AI Specialist",
+    "description": "I'm Omar, a passionate data scientist with over 5 years of experience in AI and machine learning  transforming data into actionable insights through predictive modeling and big data analytics.",
+    "download": "Download Resume",
+    "contact": "Contact Me"
+  },
+  "language": {
+    "en": "English",
+    "ar": "العربية",
+    "switch": "Switch Language"
+  },
+  "Navbar": {
+    "logoFirst": "Omar ",
+    "logoSecond": "Alzahdy"
+  },
+  "NavLinks": {
+    "about": "About",
+    "tech": "Tech Stack",
+    "projects": "Projects",
+    "papers": "Papers",
+    "blogs": "Blogs",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About Me",
+    "intro": "I'm {name}, a passionate {role} with a deep curiosity for turning raw data into meaningful insights. With over five years of experience in {ai} and {ml}, I specialize in building predictive models and scalable analytics solutions that drive data-informed decisions.",
+    "experience": "I've worked on diverse projects across {visualization}, {analytics}, and {modeling}, collaborating closely with engineers and business teams to translate complex data into actionable strategies. My approach blends analytical precision with creative problem-solving — ensuring every model tells a story and every insight drives impact.",
+    "goal": "My goal is to continue advancing in the fields of {research} and {innovation}, contributing to products and systems that help people make smarter, faster, and more ethical decisions through data.",
+    "name": "Omar AlZahdy",
+    "role": "Data Scientist",
+    "ai": "AI",
+    "ml": "machine learning",
+    "visualization": "data visualization",
+    "analytics": "big data analytics",
+    "modeling": "statistical modeling",
+    "research": "AI research",
+    "innovation": "data-driven innovation"
+  },
+  "tech": {
+    "title": "Tech Stack & Tools",
+    "description": "A snapshot of the technologies I use to explore data, build models, and deliver insights.",
+    "Python": "Python",
+    "R": "R Language",
+    "TensorFlow": "TensorFlow",
+    "Pandas": "Pandas",
+    "Tableau": "Tableau",
+    "PostgreSQL": "PostgreSQL"
+  },
+
+  "Papers": {
+    "title": "Papers & Publications",
+    "viewPaper": "View Paper",
+    "authors": "Authors",
+    "list": [
+      {
+        "title": "Improving Recommendation Systems with Hybrid Deep Learning Models",
+        "abstract": "This paper explores a novel hybrid architecture combining collaborative filtering and neural embeddings to enhance personalization accuracy.",
+        "authors": ["Omar A.", "Sarah M.", "Dr. Khaled N."],
+        "year": "2024"
+      },
+      {
+        "title": "Explainable AI in Predictive Analytics",
+        "abstract": "A study focusing on integrating explainable AI techniques within predictive modeling pipelines for greater transparency and trust.",
+        "authors": ["Omar A.", "Lina E.", "Ahmed R."],
+        "year": "2023"
+      },
+      {
+        "title": "Real-Time Data Visualization for Large-Scale Systems",
+        "abstract": "Introduces an optimized framework for rendering large-scale, real-time data visualizations with low latency using D3.js and WebGL.",
+        "authors": ["Omar A.", "Hassan T."],
+        "year": "2022"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "items": [
+      {
+        "name": "Sarah Johnson",
+        "role": "Product Manager at NovaTech",
+        "message": "Omar’s collaboration skills are top-notch! He always ensures design and functionality come together perfectly."
+      },
+      {
+        "name": "Ali Hassan",
+        "role": "Software Engineer at PixelWave",
+        "message": "Working with Omar was a pleasure. His clean code and thoughtful approach to UX made every project smooth and enjoyable."
+      },
+      {
+        "name": "Maya El-Sayed",
+        "role": "UI/UX Designer at FlowStudio",
+        "message": "Omar’s collaboration skills are top-notch! He always ensures design and functionality come together perfectly."
+      }
+    ]
+  },
+  "featuredProjects": {
+    "title": "Featured Projects",
+    "code": "Code",
+    "demo": "Demo",
+    "viewAll": "View All Projects",
+    "items": [
+      {
+        "title": "AI Recommendation Engine",
+        "description": "Developed a personalized recommendation system that boosted user engagement by 30%.",
+        "tech": ["Python", "TensorFlow", "Next.js"],
+        "repo": "#",
+        "demo": "#"
+      },
+      {
+        "title": "Data Visualization Dashboard",
+        "description": "Built an interactive analytics dashboard to visualize user metrics and KPIs in real time.",
+        "tech": ["React", "D3.js", "TailwindCSS"],
+        "repo": "#",
+        "demo": "#"
+      },
+      {
+        "title": "ML Model Deployment Platform",
+        "description": "Created a seamless interface for deploying and monitoring ML models in production environments.",
+        "tech": ["FastAPI", "Docker", "AWS"],
+        "repo": "#",
+        "demo": "#"
+      }
+    ]
+  },
+  "Contact": {
+    "title": "Contact Me",
+    "getInTouch": "Get in Touch",
+    "description": "Feel free to reach out via email, phone, or connect on social media.",
+    "email": "omar@example.com",
+    "phone": "+20 123 456 7890",
+    "sendMessage": "Send a Message",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "submit": "Send Message"
+    }
+  }
+}

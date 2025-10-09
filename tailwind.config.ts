@@ -1,6 +1,8 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "class", // <-- add this
+
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,33 +13,29 @@ const config: Config = {
       colors: {
         // Brand colors
         primary: {
-          DEFAULT: "#7F56E3", // main brand purple
-          light: "#9E77ED", // lighter tint for hover/accents
-          dark: "#6941C6", // darker shade for depth or dark sections
+          DEFAULT: "#F35034", // existing dark theme
+          light: "#7c3aed", // new light mode primary purple
         },
         secondary: {
-          DEFAULT: "#475569", // slate-600 — ideal for main text
-          light: "#64748B", // slate-500 — for muted text
-          dark: "#334155", // slate-700 — for headings or emphasis
+          DEFAULT: "#FFFFFF", // slate-600 for light mode
+          light: "#475569", // dark theme
         },
-        accent: {
-          DEFAULT: "#ff911b", // vibrant orange accent
-          light: "#ffb347", // softer, lighter orange for hover or highlights
-          dark: "#cc7400", // deeper orange for contrast or pressed states
+        background: {
+          DEFAULT: "#1B1B1B", // dark theme
+          light: "#FFFFFF", // light mode background
+          foreground: "#FFFFFF",
         },
-
-        // Surfaces
         card: {
-          DEFAULT: "#112240", // slightly lighter navy
-          foreground: "#E2E8F0",
+          DEFAULT: "#262626", // slight contrast for cards
+          foreground: "#FFFFFF",
         },
         popover: {
-          DEFAULT: "#1E293B",
-          foreground: "#E2E8F0",
+          DEFAULT: "#2D2D2D",
+          foreground: "#FFFFFF",
         },
         muted: {
-          DEFAULT: "#1E293B",
-          foreground: "#94A3B8",
+          DEFAULT: "#2E2E2E",
+          foreground: "#A3A3A3",
         },
         destructive: {
           DEFAULT: "#EF4444",
@@ -45,23 +43,35 @@ const config: Config = {
         },
 
         // UI elements
-        border: "#1E3A8A",
-        input: "#334155",
-        ring: "#3B82F6",
+        border: "#3A3A3A",
+        input: "#333333",
+        ring: "#F35034",
 
-        // Chart tones (for data visuals)
+        // Chart tones
         chart: {
-          1: "#2563EB",
-          2: "#38BDF8",
-          3: "#FBBF24",
-          4: "#10B981",
-          5: "#F87171",
+          1: "#F35034",
+          2: "#FF7849",
+          3: "#FDBA74",
+          4: "#D97706",
+          5: "#EF4444",
         },
       },
 
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
-        heading: ["Poppins", "system-ui", "sans-serif"],
+        sans: ["var(--font-geist-sans)", "Inter", "system-ui", "sans-serif"],
+        heading: [
+          "var(--font-geist-sans)",
+          "Poppins",
+          "system-ui",
+          "sans-serif",
+        ],
+        arabic: ["var(--font-cairo)", "Cairo", "system-ui", "sans-serif"],
+        "arabic-heading": [
+          "var(--font-cairo)",
+          "Cairo",
+          "system-ui",
+          "sans-serif",
+        ],
       },
 
       fontSize: {

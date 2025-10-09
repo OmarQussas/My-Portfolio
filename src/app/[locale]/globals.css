@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global background and text color */
+@layer base {
+  body {
+    @apply dark:bg-background bg-background-foreground;
+    /* @apply bg-background; */
+  }
+
+  /* Arabic font for Arabic locale */
+  html[lang="ar"] body,
+  html[lang="ar"] * {
+    font-family: var(--font-cairo), "Cairo", system-ui, sans-serif !important;
+  }
+
+  /* English font for English locale */
+  html[lang="en"] body,
+  html[lang="en"] * {
+    font-family: var(--font-geist-sans), "Geist", system-ui, sans-serif !important;
+  }
+}
