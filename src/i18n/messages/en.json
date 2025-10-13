@@ -20,7 +20,7 @@
     "tech": "Tech Stack",
     "projects": "Projects",
     "papers": "Papers",
-    "blogs": "Blogs",
+    "testimonials": "Testimonials",
     "contact": "Contact"
   },
   "about": {
@@ -127,8 +127,8 @@
     "title": "Contact Me",
     "getInTouch": "Get in Touch",
     "description": "Feel free to reach out via email, phone, or connect on social media.",
-    "email": "omar@example.com",
-    "phone": "+20 123 456 7890",
+    "email": "omarelzahdy@hotmail.com",
+    "phone": "+20 120 4631 074",
     "sendMessage": "Send a Message",
     "form": {
       "name": "Your Name",
@@ -136,5 +136,82 @@
       "message": "Your Message",
       "submit": "Send Message"
     }
+  },
+  "projectsPage": {
+    "title": "My Projects",
+    "code": "Code",
+    "demo": "Demo",
+    "viewAll": "View All Projects",
+    "back": "Back",
+    "cta": {
+      "title": "Interested in collaborating or have a project idea?",
+      "description": "Feel free to reach out! I'm always open to discussing new opportunities and collaborations.",
+      "button": "Contact Me"
+    },
+    "items": [
+      {
+        "title": "AI Recommendation Engine",
+        "description": "Developed a personalized recommendation system that boosted user engagement by 30%.",
+        "tech": ["Python", "TensorFlow", "Next.js"],
+        "repo": "#",
+        "demo": "#"
+      },
+      {
+        "title": "Data Visualization Dashboard",
+        "description": "Built an interactive analytics dashboard to visualize user metrics and KPIs in real time.",
+        "tech": ["React", "D3.js", "TailwindCSS"],
+        "repo": "#",
+        "demo": "#"
+      },
+      {
+        "title": "ML Model Deployment Platform",
+        "description": "Created a seamless interface for deploying and monitoring ML models in production environments.",
+        "tech": ["FastAPI", "Docker", "AWS"],
+        "repo": "#",
+        "demo": "#"
+      },
+      {
+        "title": "E-Commerce Admin Panel",
+        "description": "Designed a responsive admin dashboard to manage products, orders, and analytics efficiently.",
+        "tech": ["Next.js", "TypeScript", "Supabase"],
+        "repo": "#",
+        "demo": "#"
+      },
+      {
+        "title": "ChatGPT Clone UI",
+        "description": "Recreated ChatGPT’s interface with message streaming, dark mode, and smooth animations.",
+        "tech": ["React", "TailwindCSS", "Framer Motion"],
+        "repo": "#",
+        "demo": "#"
+      },
+      {
+        "title": "Portfolio Website",
+        "description": "A personal portfolio showcasing projects and achievements with smooth scroll and animations.",
+        "tech": ["Next.js", "TypeScript", "GSAP"],
+        "repo": "#",
+        "demo": "#"
+      },
+      {
+        "title": "Expense Tracker App",
+        "description": "Built a full-stack app to track expenses and visualize spending trends with charts.",
+        "tech": ["React", "Node.js", "MongoDB"],
+        "repo": "#",
+        "demo": "#"
+      },
+      {
+        "title": "Task Management Tool",
+        "description": "Developed a Trello-style productivity app with drag-and-drop and real-time sync.",
+        "tech": ["Next.js", "Prisma", "PostgreSQL"],
+        "repo": "#",
+        "demo": "#"
+      },
+      {
+        "title": "Weather Forecast App",
+        "description": "Created a weather app with live API data, location detection, and responsive charts.",
+        "tech": ["React", "OpenWeather API", "TailwindCSS"],
+        "repo": "#",
+        "demo": "#"
+      }
+    ]
   }
 }

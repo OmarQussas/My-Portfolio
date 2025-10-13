@@ -3,7 +3,7 @@ import {
   Card,
   CardHeader,
   CardContent,
-} from "@/app/[locale]/components/ui/card";
+} from "@/app/[locale]/_components/ui/card";
 import { Github, ExternalLink, FolderCode } from "lucide-react";
 import projectImg from "../../../../../public/images/projects/project-manager.png";
 import { useTranslations } from "next-intl";
@@ -18,7 +18,7 @@ export default function FeaturedProjects() {
 
   return (
     <section
-      id="tech"
+      id="projects"
       className={cn(
         "relative py-section-sm text-background dark:text-secondary  px-section-sm rounded-lg"
       )}

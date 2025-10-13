@@ -2,16 +2,16 @@
 
 import { useState, useEffect } from "react";
 import { Menu, Sun, Moon } from "lucide-react";
-import { Button } from "@/app/[locale]/components/ui/button";
+import { Button } from "@/app/[locale]/_components/ui/button";
 import {
   Sheet,
   SheetTrigger,
   SheetContent,
-} from "@/app/[locale]/components/ui/sheet";
+} from "@/app/[locale]/_components/ui/sheet";
 import {
   NavigationMenu,
   NavigationMenuList,
-} from "@/app/[locale]/components/ui/navigation-menu";
+} from "@/app/[locale]/_components/ui/navigation-menu";
 import { NavLinks } from "../nav-links";
 import { LanguageSwitcher } from "../language-switcher";
 import { Link } from "@/i18n/navigation";
@@ -24,16 +24,29 @@ export function Navbar() {
   const locale = useLocale();
   const t = useTranslations("Navbar");
 
-  // initialize dark mode based on html class
+  // Initialize theme from localStorage or system preference
   useEffect(() => {
     const html = document.documentElement;
-    setIsDark(html.classList.contains("dark"));
+    const savedTheme = localStorage.getItem("theme");
+    const systemPrefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+
+    const shouldUseDark = savedTheme
+      ? savedTheme === "dark"
+      : systemPrefersDark;
+
+    html.classList.toggle("dark", shouldUseDark);
+    setIsDark(shouldUseDark);
   }, []);
 
   const toggleDarkMode = () => {
     const html = document.documentElement;
-    html.classList.toggle("dark");
-    setIsDark(html.classList.contains("dark"));
+    const newTheme = isDark ? "light" : "dark";
+
+    html.classList.toggle("dark", newTheme === "dark");
+    setIsDark(newTheme === "dark");
+    localStorage.setItem("theme", newTheme);
   };
 
   return (
@@ -57,25 +70,24 @@ export function Navbar() {
               <NavLinks />
             </NavigationMenuList>
           </NavigationMenu>
-
-          {/* Dark mode toggler */}
         </nav>
 
         <div className="flex gap-2 justify-center items-center">
           <LanguageSwitcher />
+
+          {/* Dark mode toggler */}
           <Button
             variant="ghost"
             size="sm"
             onClick={toggleDarkMode}
-            className="flex items-center gap-2 rounded-xl bg-primary-light  border-secondary text-white hover:bg-primary-light/80 dark:bg-primary dark:hover:bg-primary/80  "
+            className="flex items-center gap-2 rounded-xl bg-primary-light border-secondary text-white hover:bg-primary-light/80 dark:bg-primary dark:hover:bg-primary/80"
           >
-            {isDark ? <Sun className="" /> : <Moon className="" />}
+            {isDark ? <Sun /> : <Moon />}
           </Button>
 
           {/* Mobile Menu */}
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-              {/* menu button */}
               <Button variant="ghost" size="lg" className="lg:hidden">
                 <Menu className="h-5 w-5 text-primary-light dark:text-primary" />
               </Button>
@@ -87,14 +99,12 @@ export function Navbar() {
               <nav className="flex flex-col space-y-6 mt-10">
                 <NavLinks mobile onClick={() => setOpen(false)} />
                 <div className="pt-4 flex justify-between items-center">
-                  {/* language button */}
                   <LanguageSwitcher />
-                  {/* darkmode button */}
                   <Button variant="ghost" size="icon" onClick={toggleDarkMode}>
                     {isDark ? (
                       <Sun className="text-secondary" />
                     ) : (
-                      <Moon className=" text-background" />
+                      <Moon className="text-background" />
                     )}
                   </Button>
                 </div>

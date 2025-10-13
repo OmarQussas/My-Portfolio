@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/app/[locale]/components/ui/card";
+import { Card, CardContent } from "@/app/[locale]/_components/ui/card";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { getFontClasses } from "@/lib/utils";

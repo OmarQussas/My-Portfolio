@@ -2,7 +2,7 @@ import {
   Card,
   CardHeader,
   CardContent,
-} from "@/app/[locale]/components/ui/card";
+} from "@/app/[locale]/_components/ui/card";
 import { FileText, ExternalLink, FolderCode, Quote } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { SectionTitle } from "../shared/section-title-background";
@@ -20,7 +20,7 @@ export default function Papers() {
   }[];
 
   return (
-    <section className="py-section-sm">
+    <section className="py-section-sm" id="papers">
       <SectionTitle title={t("title")} icon={Quote} />;
       <div className="grid gap-8 md:grid-cols-2  lg:grid-cols-3 mx-section-xs">
         {papers.map((paper, index) => (

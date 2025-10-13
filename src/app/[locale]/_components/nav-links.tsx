@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { NavigationMenuItem } from "@/app/[locale]/components/ui/navigation-menu";
+import { NavigationMenuItem } from "@/app/[locale]/_components/ui/navigation-menu";
 import { useTranslations } from "next-intl";
 
 interface NavLinksProps {
@@ -14,8 +14,8 @@ export function NavLinks({ mobile = false, onClick }: NavLinksProps) {
     { href: "#about", label: t("about") },
     { href: "#tech", label: t("tech") },
     { href: "#projects", label: t("projects") },
+    { href: "#testimonials", label: t("testimonials") },
     { href: "#papers", label: t("papers") },
-    { href: "#blogs", label: t("blogs") },
     { href: "#contact", label: t("contact") },
   ];
 

@@ -1,14 +1,15 @@
 "use client";
 
+import { useEffect } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter, usePathname } from "@/i18n/navigation";
-import { Button } from "@/app/[locale]/components/ui/button";
+import { Button } from "@/app/[locale]/_components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/app/[locale]/components/ui/dropdown-menu";
+} from "@/app/[locale]/_components/ui/dropdown-menu";
 import { Globe } from "lucide-react";
 
 const languages = [
@@ -25,8 +26,21 @@ export function LanguageSwitcher() {
   const currentLanguage = languages.find((lang) => lang.code === locale);
 
   const handleLanguageChange = (newLocale: string) => {
+    // Save to localStorage
+    localStorage.setItem("preferredLanguage", newLocale);
     router.replace(pathname, { locale: newLocale });
   };
+
+  // Load preferred language or system language on mount
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("preferredLanguage");
+    const systemLanguage = navigator.language.startsWith("ar") ? "ar" : "en";
+    const targetLanguage = savedLanguage || systemLanguage;
+
+    if (targetLanguage !== locale) {
+      router.replace(pathname, { locale: targetLanguage });
+    }
+  }, [locale, router, pathname]);
 
   return (
     <DropdownMenu>
@@ -34,9 +48,9 @@ export function LanguageSwitcher() {
         <Button
           variant="outline"
           size="sm"
-          className="flex items-center gap-2 rounded-xl bg-primary-light     text-secondary-light hover:bg-primary-light/80 dark:bg-primary dark:hover:bg-primary/80  "
+          className="flex items-center gap-2 rounded-xl bg-primary-light text-secondary-light hover:bg-primary-light/80 dark:bg-primary dark:hover:bg-primary/80"
         >
-          <Globe className=" text-secondary " />
+          <Globe className="text-secondary" />
           <span className="hidden sm:inline font-medium text-white">
             {currentLanguage?.name}
           </span>
@@ -48,18 +62,17 @@ export function LanguageSwitcher() {
 
       <DropdownMenuContent
         align={locale === "ar" ? "start" : "end"}
-        className=" flex flex-col gap-1 py-2  shadow-md border border-secondary/20"
+        className="flex flex-col gap-1 py-2 shadow-md border border-secondary/20"
       >
         {languages.map((language) => (
           <DropdownMenuItem
             key={language.code}
             onClick={() => handleLanguageChange(language.code)}
-            className={`flex items-center gap-3  px-3 py-2 text-sm font-medium cursor-pointer transition-colors
-              ${
-                locale === language.code
-                  ? "bg-secondary/10 text-secondary"
-                  : "hover:bg-secondary/10"
-              }`}
+            className={`flex items-center gap-3 px-3 py-2 text-sm font-medium cursor-pointer transition-colors ${
+              locale === language.code
+                ? "bg-secondary/10 text-secondary"
+                : "hover:bg-secondary/10"
+            }`}
           >
             <span className="text-lg">{language.flag}</span>
             <span>{language.name}</span>

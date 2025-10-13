@@ -1,9 +1,9 @@
 "use client";
 
-import { Card, CardContent } from "@/app/[locale]/components/ui/card";
-import { Input } from "@/app/[locale]/components/ui/input";
-import { Textarea } from "@/app/[locale]/components/ui/textarea";
-import { Button } from "@/app/[locale]/components/ui/button";
+import { Card, CardContent } from "@/app/[locale]/_components/ui/card";
+import { Input } from "@/app/[locale]/_components/ui/input";
+import { Textarea } from "@/app/[locale]/_components/ui/textarea";
+import { Button } from "@/app/[locale]/_components/ui/button";
 import { Mail, Phone, Linkedin, Twitter, Github } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { SectionTitle } from "../shared/section-title";
@@ -81,7 +81,7 @@ export default function Contact() {
 
             <div className="flex gap-4 mt-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/omar-alzahdy/"
                 className="text-primary-light dark:text-primary hover:opacity-80"
               >
                 <Linkedin className="w-6 h-6" />
@@ -93,7 +93,7 @@ export default function Contact() {
                 <Twitter className="w-6 h-6" />
               </a>
               <a
-                href="#"
+                href="https://github.com/OmarAlzahdy#"
                 className="text-primary-light dark:text-primary hover:opacity-80"
               >
                 <Github className="w-6 h-6" />

@@ -1,4 +1,4 @@
-import { Button } from "@/app/[locale]/components/ui/button";
+import { Button } from "@/app/[locale]/_components/ui/button";
 import Image from "next/image";
 import { ArrowDownToLine } from "lucide-react";
 import { useTranslations } from "next-intl";

@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-console.log("📩 Contact API route loaded");
-
 export async function POST(req: Request) {
   try {
     const { name, email, message } = await req.json();
@@ -18,22 +16,24 @@ export async function POST(req: Request) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "omarqussas@gmail.com", // replace with your Gmail
-        pass: "lgze dswy itsp ddcs",
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
     const mailOptions = {
-      from: email,
-      to: "omarqussas@gmail.com", // where you’ll receive messages
-      subject: `New Message from ${name}`,
+      from: `"${name}" <${email}>`,
+      to: "Omarelzahdy@gmail.com",
+      subject: `New Contact Form Submission from ${name}`,
       text: `
-        Name: ${name}
-        Email: ${email}
-        
-        Message:
-        ${message}
-      `,
+You have received a new message through your contact form.
+
+Name: ${name}
+Email: ${email}
+
+Message:
+${message}
+  `.trim(),
     };
 
     const info = await transporter.sendMail(mailOptions);
