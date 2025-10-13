@@ -1,10 +1,10 @@
-import Hero from "@/components/features/hero/hero";
-import TechStack from "@/components/features/tech-stack";
-import About from "@/components/features/about/about";
-import FeaturedProjects from "@/components/features/featured-projects";
-import Papers from "@/components/features/papers";
-import Testimonials from "@/components/features/testmonials";
-import Contact from "@/components/features/contact";
+import Hero from "@/app/[locale]/components/features/hero/hero";
+import TechStack from "@/app/[locale]/components/features/tech-stack";
+import About from "@/app/[locale]/components/features/about/about";
+import FeaturedProjects from "@/app/[locale]/components/features/featured-projects";
+import Papers from "@/app/[locale]/components/features/papers";
+import Testimonials from "@/app/[locale]/components/features/testmonials";
+import Contact from "@/app/[locale]/components/features/contact";
 
 export default function Home() {
   return (

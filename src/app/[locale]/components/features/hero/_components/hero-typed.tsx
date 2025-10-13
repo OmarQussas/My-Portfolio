@@ -2,7 +2,7 @@
 
 import { ReactTyped } from "react-typed";
 import { ArrowDownToLine } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/[locale]/components/ui/button";
 
 interface HeroTypedProps {
   title: string;

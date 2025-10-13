@@ -2,8 +2,8 @@
 
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/app/[locale]/components/ui/card";
+import { Button } from "@/app/[locale]/components/ui/button";
 import { ArrowLeft, ArrowRight, Quote, User, User2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { SectionTitle } from "../shared/section-title";

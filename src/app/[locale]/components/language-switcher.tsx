@@ -2,13 +2,13 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter, usePathname } from "@/i18n/navigation";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/[locale]/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/app/[locale]/components/ui/dropdown-menu";
 import { Globe } from "lucide-react";
 
 const languages = [
@@ -37,10 +37,10 @@ export function LanguageSwitcher() {
           className="flex items-center gap-2 rounded-xl bg-primary-light     text-secondary-light hover:bg-primary-light/80 dark:bg-primary dark:hover:bg-primary/80  "
         >
           <Globe className=" text-secondary " />
-          <span className="hidden sm:inline font-medium text-secondary">
+          <span className="hidden sm:inline font-medium text-white">
             {currentLanguage?.name}
           </span>
-          <span className="sm:hidden font-medium uppercase">
+          <span className="sm:hidden font-medium text-white uppercase">
             {currentLanguage?.code}
           </span>
         </Button>

@@ -1,8 +1,8 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/[locale]/components/ui/button";
 import Image from "next/image";
 import { ArrowDownToLine } from "lucide-react";
 import { useTranslations } from "next-intl";
-import zahdyPortrait from "../../../../public/images/hero/zahdy-avatar-img-removebg.png";
+import zahdyPortrait from "../../../../../../public/images/hero/zahdy-avatar-img-removebg.png";
 import { HeroTyped } from "./_components/hero-typed";
 
 export default function Hero() {

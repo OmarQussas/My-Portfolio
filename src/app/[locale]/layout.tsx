@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Cairo } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/features/navbar";
+import { Navbar } from "@/app/[locale]/components/features/navbar";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { Providers } from "../providers/providers";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -48,16 +49,18 @@ export default async function RootLayout({ children, params }: Props) {
 
   return (
     <html lang={params.locale} dir={params.locale === "ar" ? "rtl" : "ltr"}>
-      <NextIntlClientProvider messages={messages}>
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} ${
-            cairo.variable
-          } antialiased ${params.locale === "ar" ? "rtl" : "ltr"}`}
-        >
-          <Navbar />
-          {children}
-        </body>
-      </NextIntlClientProvider>
+      <Providers>
+        <NextIntlClientProvider messages={messages}>
+          <body
+            className={`${geistSans.variable} ${geistMono.variable} ${
+              cairo.variable
+            } antialiased ${params.locale === "ar" ? "rtl" : "ltr"}`}
+          >
+            <Navbar />
+            {children}
+          </body>
+        </NextIntlClientProvider>
+      </Providers>
     </html>
   );
 }

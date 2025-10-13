@@ -2,12 +2,16 @@
 
 import { useState, useEffect } from "react";
 import { Menu, Sun, Moon } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
+import { Button } from "@/app/[locale]/components/ui/button";
+import {
+  Sheet,
+  SheetTrigger,
+  SheetContent,
+} from "@/app/[locale]/components/ui/sheet";
 import {
   NavigationMenu,
   NavigationMenuList,
-} from "@/components/ui/navigation-menu";
+} from "@/app/[locale]/components/ui/navigation-menu";
 import { NavLinks } from "../nav-links";
 import { LanguageSwitcher } from "../language-switcher";
 import { Link } from "@/i18n/navigation";
@@ -54,9 +58,11 @@ export function Navbar() {
             </NavigationMenuList>
           </NavigationMenu>
 
-          <LanguageSwitcher />
-
           {/* Dark mode toggler */}
+        </nav>
+
+        <div className="flex gap-2 justify-center items-center">
+          <LanguageSwitcher />
           <Button
             variant="ghost"
             size="sm"
@@ -65,33 +71,37 @@ export function Navbar() {
           >
             {isDark ? <Sun className="" /> : <Moon className="" />}
           </Button>
-        </nav>
 
-        {/* Mobile Menu */}
-        <Sheet open={open} onOpenChange={setOpen}>
-          <SheetTrigger asChild>
-            {/* menu button */}
-            <Button variant="ghost" size="icon" className="lg:hidden">
-              <Menu className="h-5 w-5 text-primary-light dark:text-primary" />
-            </Button>
-          </SheetTrigger>
-          <SheetContent
-            side={locale === "ar" ? "left" : "right"}
-            className="text-foreground-light dark:text-foreground"
-          >
-            <nav className="flex flex-col space-y-6 mt-10">
-              <NavLinks mobile onClick={() => setOpen(false)} />
-              <div className="pt-4 flex justify-between items-center">
-                {/* language button */}
-                <LanguageSwitcher />
-                {/* darkmode button */}
-                <Button variant="ghost" size="icon" onClick={toggleDarkMode}>
-                  {isDark ? <Sun className="" /> : <Moon className="" />}
-                </Button>
-              </div>
-            </nav>
-          </SheetContent>
-        </Sheet>
+          {/* Mobile Menu */}
+          <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger asChild>
+              {/* menu button */}
+              <Button variant="ghost" size="lg" className="lg:hidden">
+                <Menu className="h-5 w-5 text-primary-light dark:text-primary" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent
+              side={locale === "ar" ? "left" : "right"}
+              className="bg-secondary dark:bg-background"
+            >
+              <nav className="flex flex-col space-y-6 mt-10">
+                <NavLinks mobile onClick={() => setOpen(false)} />
+                <div className="pt-4 flex justify-between items-center">
+                  {/* language button */}
+                  <LanguageSwitcher />
+                  {/* darkmode button */}
+                  <Button variant="ghost" size="icon" onClick={toggleDarkMode}>
+                    {isDark ? (
+                      <Sun className="text-secondary" />
+                    ) : (
+                      <Moon className=" text-background" />
+                    )}
+                  </Button>
+                </div>
+              </nav>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </header>
   );

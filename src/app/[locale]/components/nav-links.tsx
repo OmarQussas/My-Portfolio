@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { NavigationMenuItem } from "@/components/ui/navigation-menu";
+import { NavigationMenuItem } from "@/app/[locale]/components/ui/navigation-menu";
 import { useTranslations } from "next-intl";
 
 interface NavLinksProps {
@@ -27,7 +27,7 @@ export function NavLinks({ mobile = false, onClick }: NavLinksProps) {
             key={link.href}
             href={link.href}
             onClick={onClick}
-            className="text-p1 text-secondary-light dark:text-secondary-light hover:text-primary-light dark:hover:text-primary font-medium transition-colors"
+            className="text-p1 text-background dark:text-secondary hover:text-primary-light dark:hover:text-primary font-medium transition-colors"
           >
             {link.label}
           </Link>

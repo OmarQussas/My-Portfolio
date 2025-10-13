@@ -1,11 +1,16 @@
 import Image from "next/image";
-import { Card, CardHeader, CardContent } from "@/components/ui/card";
+import {
+  Card,
+  CardHeader,
+  CardContent,
+} from "@/app/[locale]/components/ui/card";
 import { Github, ExternalLink, FolderCode } from "lucide-react";
-import projectImg from "../../../public/images/projects/project-manager.png";
+import projectImg from "../../../../../public/images/projects/project-manager.png";
 import { useTranslations } from "next-intl";
 
 import ViewAllLink from "../view-all";
 import { cn } from "@/lib/utils";
+import { SectionTitle } from "../shared/section-title-background";
 
 export default function FeaturedProjects() {
   const t = useTranslations("featuredProjects");
@@ -18,10 +23,7 @@ export default function FeaturedProjects() {
         "relative py-section-sm text-background dark:text-secondary  px-section-sm rounded-lg"
       )}
     >
-      <h2 className="text-h2 text-white uppercase tracking-widest bg-primary-light flex justify-center items-center gap-4  py-2 dark:bg-primary font-semibold mb-10 text-center">
-        <FolderCode size={40} /> {t("title")}
-      </h2>
-
+      <SectionTitle title={t("title")} icon={FolderCode} />
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mx-section-xs">
         {projects.map((project: any) => (
           <Card
@@ -79,7 +81,6 @@ export default function FeaturedProjects() {
           </Card>
         ))}
       </div>
-
       {/* View All Projects Link */}
       <ViewAllLink href="/projects" label={t("viewAll")} />
     </section>
