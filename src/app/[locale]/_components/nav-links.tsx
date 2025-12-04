@@ -15,7 +15,6 @@ export function NavLinks({ mobile = false, onClick }: NavLinksProps) {
     { href: "#tech", label: t("tech") },
     { href: "#projects", label: t("projects") },
     { href: "#testimonials", label: t("testimonials") },
-    { href: "#papers", label: t("papers") },
     { href: "#contact", label: t("contact") },
   ];
 

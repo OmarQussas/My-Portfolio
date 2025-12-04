@@ -8,8 +8,7 @@ import { Mail, Phone, Linkedin, Twitter, Github } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { SectionTitle } from "../shared/section-title";
 import { useMutation } from "@tanstack/react-query";
-import { use, useState } from "react";
-import { usePathname } from "@/i18n/navigation";
+import { useState } from "react";
 import { useLocale } from "next-intl";
 
 export default function Contact() {

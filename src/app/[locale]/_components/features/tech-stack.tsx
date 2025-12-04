@@ -2,27 +2,35 @@
 
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/app/[locale]/_components/ui/card";
-import {
-  Brain,
-  Database,
-  BarChart3,
-  Workflow,
-  LineChart,
-  Code2,
-} from "lucide-react";
+
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { SectionTitle } from "../shared/section-title";
+import {
+  Code,
+  Boxes,
+  FileType,
+  Wind,
+  Layers,
+  Database,
+  GitBranch,
+  Github,
+  MessageSquare,
+  Network,
+} from "lucide-react";
 
 const techs = [
-  { name: "Python", icon: Code2, key: "Python" },
-  { name: "R", icon: Workflow, key: "R" },
-  { name: "TensorFlow", icon: Brain, key: "TensorFlow" },
-  { name: "Pandas", icon: BarChart3, key: "Pandas" },
-  { name: "Tableau", icon: LineChart, key: "Tableau" },
-  { name: "PostgreSQL", icon: Database, key: "PostgreSQL" },
+  { name: "React", icon: Boxes, key: "React" }, // React component blocks
+  { name: "Next.js", icon: Network, key: "NextJS" }, // Routing / network symbol
+  { name: "TypeScript", icon: FileType, key: "TypeScript" }, // File-type icon
+  { name: "Tailwind CSS", icon: Wind, key: "Tailwind" }, // Wind = Tailwind
+  { name: "Bootstrap", icon: Layers, key: "Bootstrap" }, // Layered UI
+  { name: "React Query", icon: Database, key: "ReactQuery" }, // Async data
+  { name: "Shadcn/UI", icon: Code, key: "ShadcnUI" }, // UI components / code
+  { name: "Git", icon: GitBranch, key: "Git" }, // Version control branches
+  { name: "GitHub", icon: Github, key: "GitHub" }, // Perfect match
+  { name: "Slack", icon: MessageSquare, key: "Slack" }, // Messaging tool
 ];
-
 export default function TechStack() {
   const t = useTranslations("tech");
   return (
@@ -39,7 +47,7 @@ export default function TechStack() {
         <SectionTitle>{t("title")}</SectionTitle>
         <p className="text-p1  max-w-2xl mx-auto mb-12">{t("description")}</p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 ">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 ">
           {techs.map(({ name, icon: Icon, key }) => (
             <motion.div
               key={name}

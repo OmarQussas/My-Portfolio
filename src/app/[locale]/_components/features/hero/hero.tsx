@@ -1,6 +1,4 @@
-import { Button } from "@/app/[locale]/_components/ui/button";
 import Image from "next/image";
-import { ArrowDownToLine } from "lucide-react";
 import { useTranslations } from "next-intl";
 import zahdyPortrait from "../../../../../../public/images/hero/zahdy-avatar-img-removebg.png";
 import { HeroTyped } from "./_components/hero-typed";
@@ -34,7 +32,7 @@ export default function Hero() {
             alt="Omar Avatar"
             width={400}
             height={400}
-            className="object-cover w-full h-full rounded-full"
+            className="object-cover object-top w-full h-full rounded-full"
           />
         </div>
       </div>

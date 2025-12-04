@@ -1,10 +1,10 @@
 {
   "home": {
-    "title": "Data Scientist & AI Specialist",
-    "description": "I'm Omar, a passionate data scientist with over 5 years of experience in AI and machine learning  transforming data into actionable insights through predictive modeling and big data analytics.",
+    "title": "Frontend Developer",
+    "description": "I'm Omar, a passionate frontend developer with extensive experience building accessible, animated, and performant web applications using modern JavaScript frameworks and libraries.",
     "download": "Download Resume",
     "contact": "Contact Me",
-    "typedStrings": ["Omar Alzahdy", "Data Nerd", "AI Enthusiast"]
+    "typedStrings": ["Omar AlQussas", "Frontend Developer", "UI Enthusiast"]
   },
   "language": {
     "en": "English",
@@ -13,7 +13,7 @@
   },
   "Navbar": {
     "logoFirst": "Omar ",
-    "logoSecond": "Alzahdy"
+    "logoSecond": "AlQussas"
   },
   "NavLinks": {
     "about": "About",
@@ -25,54 +25,38 @@
   },
   "about": {
     "title": "About Me",
-    "intro": "I'm <name>OmarAlzahdy</name>, a passionate <role> Data Scientist</role> with a deep curiosity for turning raw data into meaningful insights. With over five years of experience in <ai> AI</ai> and <ml> Machine Learning</ml> , I specialize in building predictive models and scalable analytics solutions that drive data-informed decisions.",
-    "experience": "I've worked on diverse projects across <visualization>Data Visualization</visualization>, <analytics> big data analytics</analytics>, and <modeling>statistical Modeling</modeling>, collaborating closely with engineers and business teams to translate complex data into actionable strategies. My approach blends analytical precision with creative problem-solving — ensuring every model tells a story and every insight drives impact.",
-    "goal": "My goal is to continue advancing in the fields of <research>AI research</research> and <innovation>data-driven innovations</innovation>, contributing to products and systems that help people make smarter, faster, and more ethical decisions through data.",
-    "name": "Omar AlZahdy",
-    "role": "Data Scientist",
-    "ai": "AI",
-    "ml": "machine learning",
-    "visualization": "data visualization",
-    "analytics": "big data analytics",
-    "modeling": "statistical modeling",
-    "research": "AI research",
-    "innovation": "data-driven innovation"
+    "intro": "I'm <name>OmarAlQussas</name>, a passionate <role> Frontend Developer</role> with a deep curiosity for crafting intuitive, accessible, and animated user interfaces. With years of experience in <ai> React</ai> and <ml> TypeScript</ml> , I specialize in building responsive, internationalized, and SEO-friendly applications that deliver exceptional user experiences.",
+    "experience": "I've worked on diverse projects across <visualization>UI/UX Implementation</visualization>, <analytics> performance optimization</analytics>, and <modeling>state management</modeling>, collaborating closely with designers and backend engineers in agile environments to bring products to life. My approach blends technical precision with a strong focus on accessibility and smooth interactions — ensuring every pixel serves a purpose and every animation enhances usability.",
+    "goal": "My goal is to continue advancing in the fields of <research>frontend architecture</research> and <innovation>accessible web innovation</innovation>, contributing to products that are not only beautiful and fast but also inclusive and intuitive for all users.",
+    "name": "Omar AlQussas",
+    "role": "Frontend Developer",
+    "ai": "React",
+    "ml": "TypeScript",
+    "visualization": "UI/UX implementation",
+    "analytics": "performance optimization",
+    "modeling": "state management",
+    "research": "frontend architecture",
+    "innovation": "accessible web innovation"
   },
   "tech": {
     "title": "Tech Stack & Tools",
-    "description": "A snapshot of the technologies I use to explore data, build models, and deliver insights.",
-    "Python": "Python",
-    "R": "R Language",
-    "TensorFlow": "TensorFlow",
-    "Pandas": "Pandas",
-    "Tableau": "Tableau",
-    "PostgreSQL": "PostgreSQL"
+    "description": "A snapshot of the technologies I use to build modern, responsive, and accessible web applications.",
+    "React": "React.js",
+    "NextJS": "Next.js",
+    "TypeScript": "TypeScript",
+    "Tailwind": "Tailwind CSS",
+    "ReactQuery": "React Query",
+    "ShadcnUI": "shadcn/ui",
+    "Git": "Git",
+    "GitHub": "GitHub",
+    "Slack": "Slack",
+    "Bootstrap": "Bootstrap"
   },
-
   "Papers": {
     "title": "Papers & Publications",
     "viewPaper": "View Paper",
     "authors": "Authors",
-    "list": [
-      {
-        "title": "Improving Recommendation Systems with Hybrid Deep Learning Models",
-        "abstract": "This paper explores a novel hybrid architecture combining collaborative filtering and neural embeddings to enhance personalization accuracy.",
-        "authors": ["Omar A.", "Sarah M.", "Dr. Khaled N."],
-        "year": "2024"
-      },
-      {
-        "title": "Explainable AI in Predictive Analytics",
-        "abstract": "A study focusing on integrating explainable AI techniques within predictive modeling pipelines for greater transparency and trust.",
-        "authors": ["Omar A.", "Lina E.", "Ahmed R."],
-        "year": "2023"
-      },
-      {
-        "title": "Real-Time Data Visualization for Large-Scale Systems",
-        "abstract": "Introduces an optimized framework for rendering large-scale, real-time data visualizations with low latency using D3.js and WebGL.",
-        "authors": ["Omar A.", "Hassan T."],
-        "year": "2022"
-      }
-    ]
+    "list": []
   },
   "testimonials": {
     "title": "Testimonials",
@@ -80,17 +64,17 @@
       {
         "name": "Sarah Johnson",
         "role": "Product Manager at NovaTech",
-        "message": "Omar’s collaboration skills are top-notch! He always ensures design and functionality come together perfectly."
+        "message": "Omar’s attention to detail and commitment to accessibility make his UIs stand out. He brings designs to life with flawless execution."
       },
       {
         "name": "Ali Hassan",
         "role": "Software Engineer at PixelWave",
-        "message": "Working with Omar was a pleasure. His clean code and thoughtful approach to UX made every project smooth and enjoyable."
+        "message": "Working with Omar was a pleasure. His clean code, use of modern tooling like TanStack Query, and thoughtful animations elevate every project."
       },
       {
         "name": "Maya El-Sayed",
         "role": "UI/UX Designer at FlowStudio",
-        "message": "Omar’s collaboration skills are top-notch! He always ensures design and functionality come together perfectly."
+        "message": "Omar perfectly bridges design and development—his implementations are pixel-perfect and always respect accessibility standards."
       }
     ]
   },
@@ -101,23 +85,42 @@
     "viewAll": "View All Projects",
     "items": [
       {
-        "title": "AI Recommendation Engine",
-        "description": "Developed a personalized recommendation system that boosted user engagement by 30%.",
-        "tech": ["Python", "TensorFlow", "Next.js"],
+        "title": "Internationalized E-Commerce Platform",
+        "description": "Built a fully responsive store with multi-language support using next-intl, authentication via NextAuth, and cart state managed with TanStack Query.",
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "next-intl",
+          "NextAuth",
+          "TanStack Query",
+          "Tailwind CSS"
+        ],
         "repo": "#",
         "demo": "#"
       },
       {
-        "title": "Data Visualization Dashboard",
-        "description": "Built an interactive analytics dashboard to visualize user metrics and KPIs in real time.",
-        "tech": ["React", "D3.js", "TailwindCSS"],
+        "title": "Animated Portfolio Website",
+        "description": "A personal portfolio with scroll-triggered animations, dark mode, and optimized performance using Next.js and Framer Motion.",
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "Framer Motion",
+          "Tailwind CSS",
+          "shadcn/ui"
+        ],
         "repo": "#",
         "demo": "#"
       },
       {
-        "title": "ML Model Deployment Platform",
-        "description": "Created a seamless interface for deploying and monitoring ML models in production environments.",
-        "tech": ["FastAPI", "Docker", "AWS"],
+        "title": "Task Management Dashboard",
+        "description": "A Trello-inspired app with drag-and-drop, real-time updates, and role-based views built with React, TanStack Query, and PostgreSQL.",
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "TanStack Query",
+          "PostgreSQL",
+          "Tailwind CSS"
+        ],
         "repo": "#",
         "demo": "#"
       }
@@ -126,9 +129,9 @@
   "Contact": {
     "title": "Contact Me",
     "getInTouch": "Get in Touch",
-    "description": "Feel free to reach out via email, phone, or connect on social media.",
-    "email": "omarelzahdy@hotmail.com",
-    "phone": "+20 120 4631 074",
+    "description": "Feel free to reach out via email or connect on GitHub or LinkedIn.",
+    "email": "omarqussas@gmail.com",
+    "phone": "+20 1013 8016 21",
     "sendMessage": "Send a Message",
     "form": {
       "name": "Your Name",
@@ -150,65 +153,96 @@
     },
     "items": [
       {
-        "title": "AI Recommendation Engine",
-        "description": "Developed a personalized recommendation system that boosted user engagement by 30%.",
-        "tech": ["Python", "TensorFlow", "Next.js"],
+        "title": "Internationalized E-Commerce Platform",
+        "description": "Built a fully responsive store with multi-language support using next-intl, authentication via NextAuth, and cart state managed with TanStack Query.",
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "next-intl",
+          "NextAuth",
+          "TanStack Query",
+          "Tailwind CSS"
+        ],
         "repo": "#",
         "demo": "#"
       },
       {
-        "title": "Data Visualization Dashboard",
-        "description": "Built an interactive analytics dashboard to visualize user metrics and KPIs in real time.",
-        "tech": ["React", "D3.js", "TailwindCSS"],
+        "title": "Animated Portfolio Website",
+        "description": "A personal portfolio with scroll-triggered animations, dark mode, and optimized performance using Next.js and Framer Motion.",
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "Framer Motion",
+          "Tailwind CSS",
+          "shadcn/ui"
+        ],
         "repo": "#",
         "demo": "#"
       },
       {
-        "title": "ML Model Deployment Platform",
-        "description": "Created a seamless interface for deploying and monitoring ML models in production environments.",
-        "tech": ["FastAPI", "Docker", "AWS"],
+        "title": "Task Management Dashboard",
+        "description": "A Trello-inspired app with drag-and-drop, real-time updates, and role-based views built with React, TanStack Query, and PostgreSQL.",
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "TanStack Query",
+          "PostgreSQL",
+          "Tailwind CSS"
+        ],
         "repo": "#",
         "demo": "#"
       },
       {
-        "title": "E-Commerce Admin Panel",
-        "description": "Designed a responsive admin dashboard to manage products, orders, and analytics efficiently.",
-        "tech": ["Next.js", "TypeScript", "Supabase"],
+        "title": "Admin Panel with shadcn/ui",
+        "description": "A sleek, accessible admin dashboard using shadcn components, dark mode toggle, and responsive data tables.",
+        "tech": ["Next.js", "TypeScript", "shadcn/ui", "Tailwind CSS"],
         "repo": "#",
         "demo": "#"
       },
       {
-        "title": "ChatGPT Clone UI",
-        "description": "Recreated ChatGPT’s interface with message streaming, dark mode, and smooth animations.",
-        "tech": ["React", "TailwindCSS", "Framer Motion"],
+        "title": "Chat Interface with Streaming UI",
+        "description": "A responsive chat UI with message streaming effects, typing indicators, and smooth scroll behavior.",
+        "tech": ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
         "repo": "#",
         "demo": "#"
       },
       {
-        "title": "Portfolio Website",
-        "description": "A personal portfolio showcasing projects and achievements with smooth scroll and animations.",
-        "tech": ["Next.js", "TypeScript", "GSAP"],
+        "title": "Accessibility-First Landing Page",
+        "description": "A WCAG-compliant landing page with keyboard navigation, ARIA labels, and reduced motion support.",
+        "tech": ["Next.js", "TypeScript", "Tailwind CSS", "React Aria"],
         "repo": "#",
         "demo": "#"
       },
       {
-        "title": "Expense Tracker App",
-        "description": "Built a full-stack app to track expenses and visualize spending trends with charts.",
-        "tech": ["React", "Node.js", "MongoDB"],
+        "title": "Expense Tracker with Charts",
+        "description": "A mobile-first expense app with interactive charts, local storage, and form validation.",
+        "tech": ["React", "TypeScript", "Chart.js", "Tailwind CSS"],
         "repo": "#",
         "demo": "#"
       },
       {
-        "title": "Task Management Tool",
-        "description": "Developed a Trello-style productivity app with drag-and-drop and real-time sync.",
-        "tech": ["Next.js", "Prisma", "PostgreSQL"],
+        "title": "Multi-step Form Wizard",
+        "description": "A reusable, accessible form wizard with validation, progress tracking, and responsive layout.",
+        "tech": [
+          "React",
+          "TypeScript",
+          "React Hook Form",
+          "Zod",
+          "Tailwind CSS"
+        ],
         "repo": "#",
         "demo": "#"
       },
       {
-        "title": "Weather Forecast App",
-        "description": "Created a weather app with live API data, location detection, and responsive charts.",
-        "tech": ["React", "OpenWeather API", "TailwindCSS"],
+        "title": "Weather Dashboard",
+        "description": "A weather app with geolocation, caching via TanStack Query, and responsive card layout.",
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "TanStack Query",
+          "OpenWeather API",
+          "Tailwind CSS"
+        ],
         "repo": "#",
         "demo": "#"
       }
